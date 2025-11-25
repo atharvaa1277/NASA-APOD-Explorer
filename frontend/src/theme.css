@@ -1,0 +1,159 @@
+/* ------------------------------
+   GLOBAL STYLES
+------------------------------ */
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, #0b0f24, #000);
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+
+/* Centered app wrapper */
+.app-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+/* ------------------------------
+   TITLES
+------------------------------ */
+.title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 10px;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+
+  /* compatibility */
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+
+  text-shadow: 0 0 15px rgba(0, 150, 255, 0.3);
+}
+
+.subtitle {
+  text-align: center;
+  color: #a5b6ff;
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  opacity: 0.8;
+}
+
+/* ------------------------------
+   DATE PICKER SECTION
+------------------------------ */
+.date-picker-container {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.date-label {
+  font-size: 1.1rem;
+  margin-right: 10px;
+}
+
+.date-input {
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+
+  background: #141a3a;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(0, 150, 255, 0.2);
+  transition: 0.25s ease-in-out;
+}
+
+.date-input:hover {
+  box-shadow: 0 0 15px rgba(0, 150, 255, 0.4);
+  transform: scale(1.03);
+}
+
+/* ------------------------------
+   APOD DISPLAY CARD
+------------------------------ */
+.apod-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 18px;
+  padding: 25px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 0 25px rgba(61, 150, 255, 0.15);
+  margin-bottom: 40px;
+}
+
+.apod-image {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 0 20px rgba(79, 172, 254, 0.35);
+}
+
+.apod-title {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #8ecbff;
+}
+
+.apod-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #d1d9ff;
+  opacity: 0.9;
+}
+
+/* ------------------------------
+   GALLERY GRID
+------------------------------ */
+.gallery-container {
+  margin-top: 40px;
+}
+
+.gallery-title {
+  text-align: center;
+  color: #8ecbff;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.gallery-item {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: 0.25s;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(0, 140, 255, 0.2);
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(0, 140, 255, 0.4);
+}
+
+.gallery-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* ------------------------------
+   NO DATA MESSAGE
+------------------------------ */
+.no-data {
+  text-align: center;
+  font-size: 1.3rem;
+  padding: 20px;
+  color: #ff9292;
+  text-shadow: 0 0 10px rgba(255, 100, 100, 0.4);
+}
